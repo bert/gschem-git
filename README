@@ -1,0 +1,22 @@
+Installation
+------------
+
+Put git.scm into your ~/.gEDA/ directory.
+
+Add the following lines in your ~/.gEDA/gschemrc:
+  ; uncomment the following line to redefine the schdiff command
+  ;(define schdiff-command "~/bin/schdiff")
+  (load "git.scm")
+
+If you don't want to edit 'git commit' messages in your terminal,
+add a graphical program as an editor in ~/.gitconfig. Example:
+  [core]
+      editor = gvim --nofork
+
+Running
+-------
+
+Run gschem and you'll see the 'git' menu.
+Click its entries or use shortcuts to invoke corresponding git
+commands.
+Open gschem log window to see what commands are really invoked.
